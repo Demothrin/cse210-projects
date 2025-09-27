@@ -4,7 +4,6 @@ public class Address
     private string _city;
     private string _state;
     private string _country;
-    private bool _isInAmerica;
 
     public Address(string street, string city, string state, string country)
     {
@@ -16,11 +15,11 @@ public class Address
 
     public bool IsUsa()
     {
-
+        return _country.ToLower() == "usa";
     }
 
     public string DisplayAddress()
     {
-        
+        return $"{_street}\n{_city}, {_state}\n{_country}";
     }
 }

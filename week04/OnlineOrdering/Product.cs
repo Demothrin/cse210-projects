@@ -17,4 +17,8 @@ public class Product
     {
         return _price * _quantity;
     }
+    public string GetProductInfo()
+    {
+        return $"{_name} (ID: {_productId} x{_quantity})";
+    }
 }
