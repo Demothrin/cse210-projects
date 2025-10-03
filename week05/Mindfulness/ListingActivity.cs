@@ -16,9 +16,12 @@ public class ListingActivity : Activity
         DisplayStartingMessage();
         Console.Clear();
 
-        GetRandomPrompt(_prompts);
+        string prompt = GetRandomPrompt(_prompts);
+        Console.WriteLine("List as many responses as you can to the following prompt:");
+        Console.WriteLine($" --- {prompt} ---");
         Console.WriteLine("Get ready to start listing...");
-        ShowSpinner(4);
+        Console.Write("You may begin in: ");
+        ShowCountDown(9);
         Console.Clear();
 
         Console.WriteLine("Go!");
