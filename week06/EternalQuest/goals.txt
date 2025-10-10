@@ -1,0 +1,6 @@
+950
+10
+1000
+SimpleGoal:simple,testing 1,100,True
+EternalGoal:eternal,testing 2,200
+ChecklistGoal:checklist,testing 3,50,3,500,3,True
